@@ -9,12 +9,12 @@ p {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 a {
@@ -79,7 +79,7 @@ a {
 
 .body1 img {
 
-  height: 200px;
+  height: 120px;
 }
 
 .body1 ul {
@@ -104,7 +104,7 @@ a {
 
 .body1 .table-head {
   border: 2px solid;
-  margin: 20px 15px;
+  margin: 0px;
 }
 
 .leftmenu {
@@ -113,10 +113,10 @@ a {
 }
 
 table {
-  font-size: 20px;
+  font-size: 12px;
   border-collapse: collapse;
   width: 100%;
-  line-height: 50px;
+  line-height: 20px;
   outline-width: 100px;
   border: 1px solid #b0b0b0;
   margin: 0 auto;
