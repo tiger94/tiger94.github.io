@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="title">
-  <h1 style="color: #ff860d" ;>柳虎个人简历</h1>
+  <h1 style="color: #040404" ;>柳虎个人简历</h1>
 </div>
 
 <div class="body1">
@@ -20,7 +20,7 @@
         <td>柳虎</td>
         <th>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</th>
         <td>男</td>
-        <th width="200px">照&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;片</th>
+        <th width="100px">照&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;片</th>
       </tr>
       <tr>
         <th>出生年月</th>
@@ -32,24 +32,24 @@
       <tr>
         <th>籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯</th>
         <td>湖北省孝感市</td>
-        <th>政治面貌</th>
-        <td>中共预备</td>
-      </tr>
-      <tr>
         <th>毕业院校</th>
         <td>中国石油大学（华东）</td>
+      </tr>
+      <tr>
+        <th>政治面貌</th>
+        <td>中共预备</td>
         <th>主修专业</th>
         <td>通信工程</td>
       </tr>
       <tr>
         <th>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</th>
-        <td>1475793027@qq.com</td>
-        <th>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</th>
-        <td>18507104208</td>
-      </tr>
-      <tr>
+        <td>liu_hu@cvicse.com</td>
         <th>兴趣爱好</th>
         <td>擅长篮球、乒乓球、舞蹈、摄影</td>
+      </tr>
+      <tr>
+        <th>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</th>
+        <td>18507104208</td>
         <th>主修课程</th>
         <td colspan="2">《通信工程》、《数据库》、《C语言》、《JAVA》等(自学web前端知识)</td>
       </tr>
@@ -105,22 +105,8 @@
   <div>
     <h1>自我评价</h1>
   </div>
-  <div>
-    <h2 class="import">最后一篇文章的二级标题</h2>
-  </div>
-  <div>
-    <h3>文章作者 &nbsp;发布时间</h3>
-  </div>
-  <div>
-    <ol>
-      <li>排名1</li>
-      <li>排名2</li>
-      <li>排名3</li>
-    </ol>
-  </div>
   <div class="table-head">
-    <table>
-      <div class="table-head">
+    <table border="1px solid">
         <tr>
           <td>表头</td>
           <td>表头</td>
@@ -148,11 +134,30 @@
       </div>
     </table>
   </div>
-</div>
-<input type="button" value="打印简历" onclick="javascript:window.print()">
+<script language="javascript">
+  function printdiv(printpage)
+  {
+    var newstr = printpage.innerHTML;
+    var oldstr = document.body.innerHTML;
+    document.body.innerHTML =newstr;
+    window.print();
+    document.body.innerHTML=oldstr;
+    return false;
+  }
+  window.onload=function()
+  {
+    var bt=document.getElementById("bt");
+    var div_print=document.getElementById("body1");
+    bt.onclick=function()
+    {
+      printdiv(div_print);
+    }
+  }
+</script>
+<input name="print" type="button" id="bt" value="点击打印" />
+<input type="button" value="打印简历" onclick="javascript:window.print('body')">
 <div class="title">
   <p>版权所有&copyFat Tiger
-  <p>
 </div>
 </body>
 </html>
