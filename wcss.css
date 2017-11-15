@@ -14,14 +14,6 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-size: 12px;
-}
-
-a {
-  text-decoration: none;
-}
-
 .left {
   float: left;
 }
@@ -35,8 +27,9 @@ a {
   text-align: center;
   border: 1px solid;
   font-size: 12px;
-  background: #e9f7ec;
+  background: rgba(11, 12, 11, 0.52);
   height: 30px;
+  width: auto;
 }
 .body1 {
   border: 1px solid;
@@ -79,11 +72,6 @@ a {
   margin: 0px;
 }
 
-.leftmenu {
-  border-left: 4px solid #b0b0b0;
-  padding-left: 20px;
-}
-
 table {
   font-size: 12px;
   border-collapse: collapse;
@@ -110,11 +98,6 @@ th {
   background: ;
 }
 
-input[type="text"] {
-  width: 180px;
-  border: 1px solid #808080;
-}
-
 span {
   font-size: 10px;
   color: #b0b0b0;
@@ -137,12 +120,11 @@ form tr td:first-child {
 }
 
 input[type="button"] {
-  display: block;
   color: #FFF;
-  font-size: 25px;
-  margin: 0 auto;
-  width: 80%;
+  font-size: 15px;
+  margin: 5px auto;
+  width: 49%;
   background: #205AA7;
-  height: 50px;
+  height: 30px;
 }
 

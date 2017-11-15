@@ -5,12 +5,27 @@
   <title>柳虎个人简历</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="stylesheet" href="wcss.css" type="text/css"/>
+  <script language="javascript">
+    function preview(oper)
+    {
+      if (oper < 10){
+        bdhtml=window.document.body.innerHTML;//获取当前页的html代码
+        sprnstr="<!--startprint"+oper+"-->";//设置打印开始区域
+        eprnstr="<!--endprint"+oper+"-->";//设置打印结束区域
+        prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18); //从开始代码向后取html
+        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));//从结束代码向前取html
+        window.document.body.innerHTML=prnhtml;
+        window.print();
+        window.document.body.innerHTML=bdhtml;
+      } else {
+        window.print();
+      }
+    }
+  </script>
 </head>
 <body>
+<!--startprint1-->
 <div class="body1">
-  <div class="title">
-    <h1>柳虎个人简历</h1>
-  </div>
   <h1>基本信息</h1>
   <div class="table-head">
     <table border="1px solid">
@@ -26,7 +41,9 @@
         <td>1994.04</td>
         <th>民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族</th>
         <td>汉</td>
+        <!--startprint2-->
         <td rowspan="4"><img src="picture/1.jpg"></img></td>
+        <!--endprint2-->
       </tr>
       <tr>
         <th>籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯</th>
@@ -133,30 +150,11 @@
       </div>
     </table>
   </div>
-<script language="javascript">
-  function printdiv(printpage)
-  {
-    var newstr = printpage.innerHTML;
-    var oldstr = document.body.innerHTML;
-    document.body.innerHTML =newstr;
-    window.print();
-    document.body.innerHTML=oldstr;
-    return false;
-  }
-  window.onload=function()
-  {
-    var bt=document.getElementById("bt");
-    var div_print=document.getElementById("body1");
-    bt.onclick=function()
-    {
-      printdiv(div_print);
-    }
-  }
-</script>
-<input name="print" type="button" id="bt" value="点击打印" />
-<input type="button" value="打印简历" onclick="javascript:window.print('body')">
+<!--endprint1-->
+<input type="button" name="button_export" title="打印1" onclick="preview(1)" value="打印简历">
+<input type="button" name="button_export" title="打印2" onclick="preview(2)" value="打印照片">
+</body>
 <div class="title">
   <p>版权所有&copyFat Tiger
 </div>
-</body>
 </html>
