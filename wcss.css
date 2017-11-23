@@ -14,15 +14,6 @@ h1 {
   text-align: center;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-
-  float: right;
-}
-
 .title {
   text-align: center;
   border: 1px solid;
@@ -45,26 +36,6 @@ h1 {
 }
 .body1 img {
   height: 120px;
-}
-
-.body1 ul {
-  text-align: left;
-  font-size: 13px;
-  list-style: none;
-}
-
-.body1 .beautiful {
-  width: 150px;
-  height: 150px;
-  line-height: 1.2em;
-  margin: 10px;
-  text-align: center;
-  border: 1px solid #363636;
-}
-
-.body1 .beautiful img {
-  width: 100px;
-  height: 100px;
 }
 
 .body1 .table-head {
