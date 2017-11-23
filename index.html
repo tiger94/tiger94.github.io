@@ -6,17 +6,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="stylesheet" href="wcss.css" type="text/css"/>
   <script language="javascript">
-    function preview(oper)
-    {
-      if (oper < 10){
-        bdhtml=window.document.body.innerHTML;//获取当前页的html代码
-        sprnstr="<!--startprint"+oper+"-->";//设置打印开始区域
-        eprnstr="<!--endprint"+oper+"-->";//设置打印结束区域
-        prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18); //从开始代码向后取html
-        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));//从结束代码向前取html
-        window.document.body.innerHTML=prnhtml;
+    function preview(oper) {
+      if (oper < 10) {
+        bdhtml = window.document.body.innerHTML;//获取当前页的html代码
+        sprnstr = "<!--startprint" + oper + "-->";//设置打印开始区域
+        eprnstr = "<!--endprint" + oper + "-->";//设置打印结束区域
+        prnhtml = bdhtml.substring(bdhtml.indexOf(sprnstr) + 18); //从开始代码向后取html
+        prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));//从结束代码向前取html
+        window.document.body.innerHTML = prnhtml;
         window.print();
-        window.document.body.innerHTML=bdhtml;
+        window.document.body.innerHTML = bdhtml;
       } else {
         window.print();
       }
@@ -136,9 +135,10 @@
       <tr>
         <td colspan="4">2015年<strong>带队</strong>参与齐鲁软件大赛并获得完成奖</td>
       </tr>
-	  <tr>
+      <tr>
         <th>职业技能</th>
-        <td colspan="4"><a href="picture/1.jpg">国家英语四级证书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="picture/1.jpg">计算机二级证书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="picture/专利.jpg">实用新型专利证书</a></td>
+        <td colspan="4"><a href="picture/1.jpg">国家英语四级证书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="picture/1.jpg">计算机二级证书</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+          href="picture/专利.jpg">实用新型专利证书</a></td>
       </tr>
     </table>
   </div>
@@ -149,38 +149,38 @@
   </div>
   <div class="table-head">
     <table border="1px solid">
-        <tr>
-          <td>表头</td>
-          <td>表头</td>
-          <td>表头</td>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="">操作？</a></td>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="">操作？</a></td>
-        </tr>
-        <tr>
-          <td>内容</td>
-          <td>内容</td>
-          <td><a href="">操作？</a></td>
-        </tr>
-        <tr>
-          <td>总计</td>
-          <td colspan="2">1000</td>
-        </tr>
-      </div>
-    </table>
+      <tr>
+        <td>表头</td>
+        <td>表头</td>
+        <td>表头</td>
+      </tr>
+      <tr>
+        <td>内容</td>
+        <td>内容</td>
+        <td><a href="">操作？</a></td>
+      </tr>
+      <tr>
+        <td>内容</td>
+        <td>内容</td>
+        <td><a href="">操作？</a></td>
+      </tr>
+      <tr>
+        <td>内容</td>
+        <td>内容</td>
+        <td><a href="">操作？</a></td>
+      </tr>
+      <tr>
+        <td>总计</td>
+        <td colspan="2">1000</td>
+      </tr>
   </div>
+  </table>
+</div>
 <!--endprint1-->
 <input type="button" name="button_export" title="打印1" onclick="preview(1)" value="打印简历">
 <input type="button" name="button_export" title="打印2" onclick="preview(2)" value="打印照片">
 </body>
-<div class="title">
-  <p>版权所有&copyFat Tiger
+<div class="end">
+  版权所有&copyFat Tiger
 </div>
 </html>
