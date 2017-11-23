@@ -67,29 +67,9 @@ th {
 
 }
 
-span {
-  font-size: 10px;
-  color: #b0b0b0;
-}
 strong{
   font-size: 18px;
   color: #48f77a;
-}
-
-form {
-  margin: 15px 15px;
-  font-size: 12px;
-}
-
-form table {
-  font-size: 12px;
-  border: 0px;
-  vertical-align: center;
-  height: 200px;
-}
-
-form tr td:first-child {
-  text-align: right;
 }
 
 input[type="button"] {
