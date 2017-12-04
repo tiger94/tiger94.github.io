@@ -1,6 +1,6 @@
 body {
-  width: 210mm;
-  margin: 0 0 0 -105mm;
+  width: 200mm;
+  margin: 0 0 0 -100mm;
   padding: 0 0 0 50%;
   background: #e9f7ec;
 }
@@ -44,6 +44,7 @@ h1 {
 
 table {
   font-size: 18px;
+  font-weight: normal;
   border-collapse: collapse;
   width: 100%;
   line-height: 25px;
@@ -67,6 +68,7 @@ th {
 strong {
   font-size: 18px;
   color: #48f77a;
+  font-weight: bolder;
 }
 
 input[type="button"] {
