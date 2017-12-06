@@ -74,8 +74,8 @@ strong {
 input[type="button"] {
   color: #FFF;
   font-size: 15px;
-  margin: 5px auto;
-  width: 49%;
+  margin: 5px 25% auto;
+  width: 50%;
   background: #205AA7;
   height: 30px;
 }
